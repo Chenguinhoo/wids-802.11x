@@ -1,0 +1,17 @@
+#Rutas donde se van a almacenar los ficheros del WIDS
+pcap_path: '/home/chengo/tfm/pcaps/'
+log_path: '/tmp/wids_logs/'
+filename: '/tmp/sniff.pcap'
+#Límites de tramas recibidas para definir los ataques
+max_dos: 10
+max_ksk: 3
+#Configuración del WIDS
+#0 -> Bajo (DoS, 4-way hsk)
+#1 -> Medio (deauth, disasoc, fake ap)
+#2 -> Alto (clientes y aps)
+detail_level: 2
+#'' para no tener ningún AP configurado
+ssid: 'CASA_PACO'
+ssid_n: ''
+#Ińdice fichero a analizar
+n_fichero: 0
