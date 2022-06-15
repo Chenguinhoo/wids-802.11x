@@ -92,6 +92,7 @@ def get_config():
     global detail
     detail = const.config['detail_level']
 
+    config = None
     ssid_p = const.config['ssid']
     ssid_n = const.config['ssid_n']
     if ssid_p != '':
@@ -266,3 +267,4 @@ if __name__ == '__main__':
     print('\n| Arranca el WIDS...                      |')
     print('\n -----------------------------------------')
     sniffile(const.PCAPS[const.config['n_fichero']])
+    #sniffile(const.DEFAULT);

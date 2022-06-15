@@ -11,7 +11,7 @@ import yaml as yaml
 
 CONFILE = 'wids_config.yaml'
 BROADCAST = 'ff:ff:ff:ff:ff:ff'
-PCAPS = ['fake_aps.pcap', 'deauth.pcap', 'disasoc.pcap']
+PCAPS = ['fake_aps.pcap', '100x0.1fap.pcap', 'disasoc.pcap']
 LOGS = ['aps.wids', 'clients.wids', 'attacks.wids', 'ap_ssids.wids']
 ATAQUES = ["DEAUTH", "DISAS", "4WAY", "FAP"]
 
@@ -24,5 +24,6 @@ for i in range(len(PCAPS)):
 for i in range(len(LOGS)):
     LOGS[i] = config['log_path'] + LOGS[i]
 
+DEFAULT = config['filename']
 DOSNUM = config['max_dos']
 HSKNUM = config['max_ksk']
